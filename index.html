@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shortly - URL Shortener</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">Shortly<span>.</span></div>
+        <a href="#history">History</a>
+    </nav>
+
+    <main>
+
+        <section class="hero">
+            <p class="label">URL SHORTENER</p>
+
+            <h1>
+                Make your links
+                <span>short & simple.</span>
+            </h1>
+
+            <p class="description">
+                Turn long URLs into clean, shareable links in seconds.
+            </p>
+
+            <form id="shortener-form">
+                <input
+                    type="url"
+                    id="url-input"
+                    placeholder="Paste your long URL here..."
+                    required
+                >
+
+                <button type="submit">
+                    Shorten URL
+                </button>
+            </form>
+
+            <div class="result" id="result">
+                <div>
+                    <p>Your shortened URL</p>
+                    <a href="#" id="short-url">
+                        https://example.com
+                    </a>
+                </div>
+
+                <button id="copy-button">
+                    Copy
+                </button>
+            </div>
+        </section>
+
+
+        <section id="history" class="history">
+
+            <p class="label">YOUR LINKS</p>
+            <h2>Recent links</h2>
+
+            <div class="history-box">
+                <p>No shortened links yet.</p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        Built with Python.
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

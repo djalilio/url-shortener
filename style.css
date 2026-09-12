@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #0b0d10;
+    color: #f5f5f5;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    height: 80px;
+    max-width: 960px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #5b8cff;
+}
+
+nav a {
+    color: #999;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: white;
+}
+
+main {
+    max-width: 960px;
+    margin: auto;
+}
+
+.hero {
+    text-align: center;
+    padding: 110px 20px 90px;
+}
+
+.label {
+    color: #5b8cff;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 64px;
+    line-height: 1;
+    letter-spacing: -3px;
+}
+
+h1 span {
+    display: block;
+    color: #888;
+}
+
+.description {
+    color: #999;
+    margin: 25px auto 35px;
+    max-width: 500px;
+    line-height: 1.6;
+}
+
+form {
+    max-width: 720px;
+    margin: auto;
+
+    display: flex;
+    gap: 10px;
+
+    padding: 7px;
+
+    background: #12151a;
+    border: 1px solid #262b34;
+    border-radius: 12px;
+}
+
+input {
+    flex: 1;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+    color: white;
+
+    padding: 15px;
+    font-size: 15px;
+}
+
+input::placeholder {
+    color: #666;
+}
+
+form button,
+#copy-button {
+    border: none;
+    cursor: pointer;
+
+    background: #5b8cff;
+    color: white;
+
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+form button {
+    padding: 0 22px;
+}
+
+form button:hover,
+#copy-button:hover {
+    opacity: 0.85;
+}
+
+.result {
+    display: none;
+
+    max-width: 720px;
+    margin: 15px auto 0;
+
+    padding: 18px 20px;
+
+    background: #12151a;
+    border: 1px solid #262b34;
+    border-radius: 10px;
+
+    text-align: left;
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+.result p {
+    color: #888;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.result a {
+    color: #5b8cff;
+    text-decoration: none;
+}
+
+#copy-button {
+    padding: 10px 15px;
+}
+
+.history {
+    padding: 20px;
+}
+
+.history h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.history-box {
+    padding: 30px;
+
+    background: #12151a;
+    border: 1px solid #262b34;
+    border-radius: 10px;
+
+    color: #777;
+    text-align: center;
+}
+
+footer {
+    max-width: 960px;
+    margin: auto;
+
+    padding: 30px 20px;
+
+    border-top: 1px solid #262b34;
+
+    color: #666;
+    text-align: center;
+    font-size: 13px;
+}
+
+@media (max-width: 650px) {
+
+    h1 {
+        font-size: 45px;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    form button {
+        padding: 14px;
+    }
+}
