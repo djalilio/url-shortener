@@ -16,7 +16,6 @@ def home():
 
 
 
-
 url_mem = {}
 s = pyshorteners.Shortener()
 
